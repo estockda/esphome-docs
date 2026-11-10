@@ -101,10 +101,10 @@ sensor:
 - **address** (*Optional*, int): Manually specify the I²C address of the sensor.
   Defaults to `0x69`.
 
-- **update_interval** (*Optional*, [Time](/guides/configuration-types#time)): The interval to check the
+- **update_interval** (*Optional*, [Time](/guides/configuration-types/#time)): The interval to check the
   sensor. Defaults to `60s`.
 
-- **idle_interval** (*Optional*, [Time](/guides/configuration-types#time)): If specified, puts the sensor
+- **idle_interval** (*Optional*, [Time](/guides/configuration-types/#time)): If specified, puts the sensor
   into idle mode between readings for the specified amount of time.
 
 ## Wiring
@@ -122,11 +122,9 @@ The SPS30 sensor has an automatic fan-cleaning which will accelerate the built-i
 The default automatic-cleaning interval is 168 hours (1 week) of uninterrupted use. Switching off the sensor resets this time counter.
 Disabling of automatic-cleaning or setting a manual interval is not supported at the moment.
 
-<span id="sps30-start_fan_autoclean_action"></span>
-
 ## `sps30.start_fan_autoclean` Action
 
-This [action](/automations/actions#all-actions) manually starts fan-cleaning.
+This [action](/automations/actions/#all-actions) manually starts fan-cleaning.
 
 ```yaml
 on_...:
@@ -170,7 +168,7 @@ for more information.
 
 ### `sps30.start_measurement` Action
 
-This [action](/automations/actions#all-actions) manually puts the sensor into measurement mode.
+This [action](/automations/actions/#all-actions) manually puts the sensor into measurement mode.
 
 ```yaml
 on_...:
@@ -180,7 +178,7 @@ on_...:
 
 ### `sps30.stop_measurement` Action
 
-This [action](/automations/actions#all-actions) manually puts the sensor into idle mode.
+This [action](/automations/actions/#all-actions) manually puts the sensor into idle mode.
 
 ```yaml
 on_...:
@@ -191,7 +189,7 @@ on_...:
 ## See Also
 
 - [Air Quality Index (AQI)](/components/sensor/aqi/)
-- [Sensor Filters](/components/sensor#sensor-filters)
+- [Sensor Filters](/components/sensor/#sensor-filters)
 - [SDS011 Particulate Matter Sensor](/components/sensor/sds011/)
 - [PMSX003 Particulate Matter Sensor](/components/sensor/pmsx003/)
 - [CCS811 eCO_2 and Volatile Organic Compound Sensor](/components/sensor/ccs811/)
